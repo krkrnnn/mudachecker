@@ -9,6 +9,14 @@
 import UIKit
 
 class GoalViewController: UIViewController {
+    
+    //設定する目標金額を入力するフィールド
+    @IBOutlet var goalText: UITextField!
+    
+    //目標金額登録ボタン
+    //@IBOutlet var registerButton: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +27,12 @@ class GoalViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    //目標金額登録ボタン
+    @IBAction func registerButtontapped(){
+    
     }
     
 
