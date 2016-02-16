@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4001C72CFCE00C48325 /* AppDelegate.swift */; };
+		94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4021C72CFCE00C48325 /* ViewController.swift */; };
+		94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECC4041C72CFCF00C48325 /* Main.storyboard */; };
+		94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ECC4071C72CFCF00C48325 /* Assets.xcassets */; };
+		94ECC40B1C72CFCF00C48325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECC4091C72CFCF00C48325 /* LaunchScreen.storyboard */; };
+		94ECC4161C72CFCF00C48325 /* mudacheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4151C72CFCF00C48325 /* mudacheckerTests.swift */; };
+		94ECC4211C72CFCF00C48325 /* mudacheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4201C72CFCF00C48325 /* mudacheckerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94ECC4121C72CFCF00C48325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94ECC3F51C72CFCE00C48325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94ECC3FC1C72CFCE00C48325;
+			remoteInfo = mudachecker;
+		};
+		94ECC41D1C72CFCF00C48325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94ECC3F51C72CFCE00C48325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94ECC3FC1C72CFCE00C48325;
+			remoteInfo = mudachecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94ECC3FD1C72CFCE00C48325 /* mudachecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mudachecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ECC4001C72CFCE00C48325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94ECC4021C72CFCE00C48325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94ECC4051C72CFCF00C48325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94ECC4071C72CFCF00C48325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94ECC40A1C72CFCF00C48325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94ECC40C1C72CFCF00C48325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ECC4111C72CFCF00C48325 /* mudacheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mudacheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ECC4151C72CFCF00C48325 /* mudacheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mudacheckerTests.swift; sourceTree = "<group>"; };
+		94ECC4171C72CFCF00C48325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ECC41C1C72CFCF00C48325 /* mudacheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mudacheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ECC4201C72CFCF00C48325 /* mudacheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mudacheckerUITests.swift; sourceTree = "<group>"; };
+		94ECC4221C72CFCF00C48325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94ECC3FA1C72CFCE00C48325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ECC40E1C72CFCF00C48325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ECC4191C72CFCF00C48325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94ECC3F41C72CFCE00C48325 = {
+			isa = PBXGroup;
+			children = (
+				94ECC3FF1C72CFCE00C48325 /* mudachecker */,
+				94ECC4141C72CFCF00C48325 /* mudacheckerTests */,
+				94ECC41F1C72CFCF00C48325 /* mudacheckerUITests */,
+				94ECC3FE1C72CFCE00C48325 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94ECC3FE1C72CFCE00C48325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94ECC3FD1C72CFCE00C48325 /* mudachecker.app */,
+				94ECC4111C72CFCF00C48325 /* mudacheckerTests.xctest */,
+				94ECC41C1C72CFCF00C48325 /* mudacheckerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94ECC3FF1C72CFCE00C48325 /* mudachecker */ = {
+			isa = PBXGroup;
+			children = (
+				94ECC4001C72CFCE00C48325 /* AppDelegate.swift */,
+				94ECC4021C72CFCE00C48325 /* ViewController.swift */,
+				94ECC4041C72CFCF00C48325 /* Main.storyboard */,
+				94ECC4071C72CFCF00C48325 /* Assets.xcassets */,
+				94ECC4091C72CFCF00C48325 /* LaunchScreen.storyboard */,
+				94ECC40C1C72CFCF00C48325 /* Info.plist */,
+			);
+			path = mudachecker;
+			sourceTree = "<group>";
+		};
+		94ECC4141C72CFCF00C48325 /* mudacheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				94ECC4151C72CFCF00C48325 /* mudacheckerTests.swift */,
+				94ECC4171C72CFCF00C48325 /* Info.plist */,
+			);
+			path = mudacheckerTests;
+			sourceTree = "<group>";
+		};
+		94ECC41F1C72CFCF00C48325 /* mudacheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94ECC4201C72CFCF00C48325 /* mudacheckerUITests.swift */,
+				94ECC4221C72CFCF00C48325 /* Info.plist */,
+			);
+			path = mudacheckerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94ECC3FC1C72CFCE00C48325 /* mudachecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ECC4251C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudachecker" */;
+			buildPhases = (
+				94ECC3F91C72CFCE00C48325 /* Sources */,
+				94ECC3FA1C72CFCE00C48325 /* Frameworks */,
+				94ECC3FB1C72CFCE00C48325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mudachecker;
+			productName = mudachecker;
+			productReference = 94ECC3FD1C72CFCE00C48325 /* mudachecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94ECC4101C72CFCF00C48325 /* mudacheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ECC4281C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudacheckerTests" */;
+			buildPhases = (
+				94ECC40D1C72CFCF00C48325 /* Sources */,
+				94ECC40E1C72CFCF00C48325 /* Frameworks */,
+				94ECC40F1C72CFCF00C48325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94ECC4131C72CFCF00C48325 /* PBXTargetDependency */,
+			);
+			name = mudacheckerTests;
+			productName = mudacheckerTests;
+			productReference = 94ECC4111C72CFCF00C48325 /* mudacheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94ECC41B1C72CFCF00C48325 /* mudacheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ECC42B1C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudacheckerUITests" */;
+			buildPhases = (
+				94ECC4181C72CFCF00C48325 /* Sources */,
+				94ECC4191C72CFCF00C48325 /* Frameworks */,
+				94ECC41A1C72CFCF00C48325 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94ECC41E1C72CFCF00C48325 /* PBXTargetDependency */,
+			);
+			name = mudacheckerUITests;
+			productName = mudacheckerUITests;
+			productReference = 94ECC41C1C72CFCF00C48325 /* mudacheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94ECC3F51C72CFCE00C48325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = net.karuna;
+				TargetAttributes = {
+					94ECC3FC1C72CFCE00C48325 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DU3RMKUVKM;
+					};
+					94ECC4101C72CFCF00C48325 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DU3RMKUVKM;
+						TestTargetID = 94ECC3FC1C72CFCE00C48325;
+					};
+					94ECC41B1C72CFCF00C48325 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DU3RMKUVKM;
+						TestTargetID = 94ECC3FC1C72CFCE00C48325;
+					};
+				};
+			};
+			buildConfigurationList = 94ECC3F81C72CFCE00C48325 /* Build configuration list for PBXProject "mudachecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94ECC3F41C72CFCE00C48325;
+			productRefGroup = 94ECC3FE1C72CFCE00C48325 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94ECC3FC1C72CFCE00C48325 /* mudachecker */,
+				94ECC4101C72CFCF00C48325 /* mudacheckerTests */,
+				94ECC41B1C72CFCF00C48325 /* mudacheckerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94ECC3FB1C72CFCE00C48325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ECC40B1C72CFCF00C48325 /* LaunchScreen.storyboard in Resources */,
+				94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */,
+				94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ECC40F1C72CFCF00C48325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ECC41A1C72CFCF00C48325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94ECC3F91C72CFCE00C48325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */,
+				94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ECC40D1C72CFCF00C48325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ECC4161C72CFCF00C48325 /* mudacheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ECC4181C72CFCF00C48325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ECC4211C72CFCF00C48325 /* mudacheckerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94ECC4131C72CFCF00C48325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94ECC3FC1C72CFCE00C48325 /* mudachecker */;
+			targetProxy = 94ECC4121C72CFCF00C48325 /* PBXContainerItemProxy */;
+		};
+		94ECC41E1C72CFCF00C48325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94ECC3FC1C72CFCE00C48325 /* mudachecker */;
+			targetProxy = 94ECC41D1C72CFCF00C48325 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94ECC4041C72CFCF00C48325 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94ECC4051C72CFCF00C48325 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94ECC4091C72CFCF00C48325 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94ECC40A1C72CFCF00C48325 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94ECC4231C72CFCF00C48325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94ECC4241C72CFCF00C48325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94ECC4261C72CFCF00C48325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mudachecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.karuna.mudachecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		94ECC4271C72CFCF00C48325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = mudachecker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.karuna.mudachecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		94ECC4291C72CFCF00C48325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mudacheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.karuna.mudacheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mudachecker.app/mudachecker";
+			};
+			name = Debug;
+		};
+		94ECC42A1C72CFCF00C48325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mudacheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.karuna.mudacheckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mudachecker.app/mudachecker";
+			};
+			name = Release;
+		};
+		94ECC42C1C72CFCF00C48325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mudacheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.karuna.mudacheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mudachecker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		94ECC42D1C72CFCF00C48325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mudacheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.karuna.mudacheckerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mudachecker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94ECC3F81C72CFCE00C48325 /* Build configuration list for PBXProject "mudachecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ECC4231C72CFCF00C48325 /* Debug */,
+				94ECC4241C72CFCF00C48325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ECC4251C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudachecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ECC4261C72CFCF00C48325 /* Debug */,
+				94ECC4271C72CFCF00C48325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94ECC4281C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudacheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ECC4291C72CFCF00C48325 /* Debug */,
+				94ECC42A1C72CFCF00C48325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		94ECC42B1C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudacheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ECC42C1C72CFCF00C48325 /* Debug */,
+				94ECC42D1C72CFCF00C48325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94ECC3F51C72CFCE00C48325 /* Project object */;
+}
