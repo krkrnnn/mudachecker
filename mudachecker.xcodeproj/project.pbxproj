@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944C7CB01C7326CA0013A9D8 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CAF1C7326CA0013A9D8 /* GoalViewController.swift */; };
+		944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB11C7326F00013A9D8 /* IndexViewController.swift */; };
+		944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */; };
+		944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB51C7327150013A9D8 /* SpendingViewController.swift */; };
 		94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4001C72CFCE00C48325 /* AppDelegate.swift */; };
 		94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4021C72CFCE00C48325 /* ViewController.swift */; };
 		94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECC4041C72CFCF00C48325 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		944C7CAF1C7326CA0013A9D8 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		944C7CB11C7326F00013A9D8 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMudaViewController.swift; sourceTree = "<group>"; };
+		944C7CB51C7327150013A9D8 /* SpendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
 		94ECC3FD1C72CFCE00C48325 /* mudachecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mudachecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ECC4001C72CFCE00C48325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94ECC4021C72CFCE00C48325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,10 @@
 				94ECC4071C72CFCF00C48325 /* Assets.xcassets */,
 				94ECC4091C72CFCF00C48325 /* LaunchScreen.storyboard */,
 				94ECC40C1C72CFCF00C48325 /* Info.plist */,
+				944C7CAF1C7326CA0013A9D8 /* GoalViewController.swift */,
+				944C7CB11C7326F00013A9D8 /* IndexViewController.swift */,
+				944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */,
+				944C7CB51C7327150013A9D8 /* SpendingViewController.swift */,
 			);
 			path = mudachecker;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944C7CB01C7326CA0013A9D8 /* GoalViewController.swift in Sources */,
+				944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */,
 				94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */,
 				94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */,
+				944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */,
+				944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +501,7 @@
 				94ECC4271C72CFCF00C48325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94ECC4281C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudacheckerTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +510,7 @@
 				94ECC42A1C72CFCF00C48325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94ECC42B1C72CFCF00C48325 /* Build configuration list for PBXNativeTarget "mudacheckerUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +519,7 @@
 				94ECC42D1C72CFCF00C48325 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
