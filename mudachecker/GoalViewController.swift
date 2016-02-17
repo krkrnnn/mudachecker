@@ -13,8 +13,13 @@ class GoalViewController: UIViewController {
     //設定する目標金額を入力するフィールド
     @IBOutlet var goalText: UITextField!
     
-    //目標金額登録ボタン
-    //@IBOutlet var registerButton: UIButton!
+    //目標金額
+    var goalValue: Int = 0
+    
+    
+    //目標金額を表示するラベル
+    @IBOutlet var goalLabel: UILabel!
+    
     
     
 
@@ -31,8 +36,17 @@ class GoalViewController: UIViewController {
     
     
     //目標金額登録ボタン
-    @IBAction func registerButtontapped(){
-    
+    @IBAction func registerButtontapped(sender: UIButton){
+        
+        //目標金額をInt型で取得
+        let goalValue = Int(goalText.text!)
+        
+        goalLabel.numberOfLines = 2
+        goalLabel.text = "今月のムダ遣いの上限は" + "\n" + "\(String(goalValue))" + "円です"
+        
+        
+ 
+        goalText.text = nil
     }
     
 
