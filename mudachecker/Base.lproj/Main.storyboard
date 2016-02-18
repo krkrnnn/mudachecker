@@ -83,9 +83,19 @@
                                     <segue destination="pb6-k3-7J7" kind="unwind" unwindAction="back:" id="PyQ-Ja-xdP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6mP-Ym-tP0">
+                                <rect key="frame" x="91" y="102" width="138" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mudaLabel" destination="6mP-Ym-tP0" id="PmM-ti-GEF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLD-Wn-VTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="pb6-k3-7J7" userLabel="Exit" sceneMemberID="exit"/>

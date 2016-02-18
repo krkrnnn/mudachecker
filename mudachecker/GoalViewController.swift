@@ -24,10 +24,6 @@ class GoalViewController: UIViewController {
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
     
-
-    
-    
-    
     
 
     override func viewDidLoad() {

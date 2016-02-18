@@ -9,11 +9,18 @@
 import UIKit
 
 class MonthMudaViewController: UIViewController {
+    
+    @IBOutlet var mudaLabel: UILabel!
+    
+    //NSUerDefaultsインスタンスの生成
+    let saveData = NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        mudaLabel.text = String(saveData.integerForKey("GOAL"))
     }
 
     override func didReceiveMemoryWarning() {
