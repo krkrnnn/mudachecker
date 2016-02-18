@@ -10,7 +10,13 @@ import UIKit
 
 class MonthMudaViewController: UIViewController {
     
+    
+    //オーバー額を表示するラベル
     @IBOutlet var mudaLabel: UILabel!
+    
+    //無駄金額
+    var mudaTotal :Int = 0
+    
     
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
@@ -20,12 +26,31 @@ class MonthMudaViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        mudaLabel.text = String(saveData.integerForKey("GOAL"))
+        
+        //var spArray = saveData.integerForKey("spArray")
+        //var spArrar[0]
+        
+        
+        //ムダ金額を取得
+        mudaTotal = saveData.integerForKey("MUDA")
+        
+        mudaLabel.numberOfLines = 2
+        //目標をオーバーした出費の額を表示
+        mudaLabel.text = String(mudaTotal) + "円" + "\n" + "ムダ遣いしています"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func ResetButtonTapped(){
+        mudaTotal = 0
+        saveData.removeObjectForKey("MUDA")
+        mudaLabel.numberOfLines = 2
+        //目標をオーバーした出費の額を表示
+        mudaLabel.text = String(mudaTotal) + "円" + "\n" + "ムダ遣いしています"
+        
     }
     
 
