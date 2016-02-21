@@ -22,6 +22,10 @@ class SpendingViewController: UIViewController {
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
     
+    var spendinglValue1 :Int = 0
+    var spendinglValue2 :Int = 0
+    var spendinglValue3 :Int = 0
+    
 
 
     override func viewDidLoad() {
@@ -40,9 +44,11 @@ class SpendingViewController: UIViewController {
     @IBAction func spendingRegisterButtonTapped(){
         
         //出費金額をInt型で取得
-        let spendinglValue1: Int? = Int(spendingText1.text!)
-        let spendinglValue2: Int? = Int(spendingText2.text!)
-        let spendinglValue3: Int? = Int(spendingText3.text!)
+        spendinglValue1 = Int(spendingText1.text!)!
+        spendinglValue2 = Int(spendingText2.text!)!
+        spendinglValue3 = Int(spendingText3.text!)!
+        //let spendinglValue2 = Int(spendingText2.text!)
+        //let spendinglValue3 = Int(spendingText3.text!)
         
         
         //入力した出費の合計値を保存する
@@ -50,7 +56,7 @@ class SpendingViewController: UIViewController {
         
         //入力した合計値を計算
         //３つの欄を全て埋めないとエラー発生
-        spendingSum = spendinglValue1! + spendinglValue2! + spendinglValue3!
+        spendingSum = spendinglValue1 + spendinglValue2 + spendinglValue3
         
         //目標値とのオーバー金額を計算
         var mudaValue = spendingSum - saveData.integerForKey("GOAL")
@@ -64,9 +70,9 @@ class SpendingViewController: UIViewController {
         
         
         //出費金額を配列に保存
-        spendingArray.append(spendinglValue1!)
-        spendingArray.append(spendinglValue2!)
-        spendingArray.append(spendinglValue3!)
+        spendingArray.append(spendinglValue1)
+        spendingArray.append(spendinglValue2)
+        spendingArray.append(spendinglValue3)
         
         //出費金額を保存
         saveData.setObject(spendingArray, forKey: "spArray")

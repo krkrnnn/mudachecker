@@ -11,6 +11,10 @@
 		944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB11C7326F00013A9D8 /* IndexViewController.swift */; };
 		944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */; };
 		944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB51C7327150013A9D8 /* SpendingViewController.swift */; };
+		94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562EB1C79885C00CAADFA /* Default-568h@2x.png */; };
+		94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562EC1C79885C00CAADFA /* Default-667h@2x.png */; };
+		94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562ED1C79885C00CAADFA /* Default-736h@3x.png */; };
+		94D562F21C7991DC00CAADFA /* mudaArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */; };
 		94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4001C72CFCE00C48325 /* AppDelegate.swift */; };
 		94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECC4021C72CFCE00C48325 /* ViewController.swift */; };
 		94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECC4041C72CFCF00C48325 /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 		944C7CB11C7326F00013A9D8 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMudaViewController.swift; sourceTree = "<group>"; };
 		944C7CB51C7327150013A9D8 /* SpendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
+		94D562EB1C79885C00CAADFA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		94D562EC1C79885C00CAADFA /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		94D562ED1C79885C00CAADFA /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mudaArrayViewController.swift; sourceTree = "<group>"; };
 		94ECC3FD1C72CFCE00C48325 /* mudachecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mudachecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ECC4001C72CFCE00C48325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94ECC4021C72CFCE00C48325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94D562EA1C79885C00CAADFA /* Defaults-master */ = {
+			isa = PBXGroup;
+			children = (
+				94D562EB1C79885C00CAADFA /* Default-568h@2x.png */,
+				94D562EC1C79885C00CAADFA /* Default-667h@2x.png */,
+				94D562ED1C79885C00CAADFA /* Default-736h@3x.png */,
+			);
+			path = "Defaults-master";
+			sourceTree = "<group>";
+		};
 		94ECC3F41C72CFCE00C48325 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +123,7 @@
 		94ECC3FF1C72CFCE00C48325 /* mudachecker */ = {
 			isa = PBXGroup;
 			children = (
+				94D562EA1C79885C00CAADFA /* Defaults-master */,
 				94ECC4001C72CFCE00C48325 /* AppDelegate.swift */,
 				94ECC4021C72CFCE00C48325 /* ViewController.swift */,
 				94ECC4041C72CFCF00C48325 /* Main.storyboard */,
@@ -115,6 +134,7 @@
 				944C7CB11C7326F00013A9D8 /* IndexViewController.swift */,
 				944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */,
 				944C7CB51C7327150013A9D8 /* SpendingViewController.swift */,
+				94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */,
 			);
 			path = mudachecker;
 			sourceTree = "<group>";
@@ -245,8 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94ECC40B1C72CFCF00C48325 /* LaunchScreen.storyboard in Resources */,
+				94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */,
 				94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */,
 				94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */,
+				94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */,
+				94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +298,7 @@
 				944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */,
 				94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */,
 				94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */,
+				94D562F21C7991DC00CAADFA /* mudaArrayViewController.swift in Sources */,
 				944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */,
 				944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */,
 			);

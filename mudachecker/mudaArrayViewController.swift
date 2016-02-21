@@ -1,31 +1,38 @@
 //
-//  IndexViewController.swift
+//  mudaArrayViewController.swift
 //  mudachecker
 //
-//  Created by 福田かるな on 2016/02/16.
+//  Created by 福田かるな on 2016/02/21.
 //  Copyright © 2016年 net.karuna. All rights reserved.
 //
 
 import UIKit
 
-class IndexViewController: UIViewController {
+class mudaArrayViewController: UIViewController {
+    
+    @IBOutlet var label: UILabel!
     
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
-    
-    //項目を入力するテキストフィールド
-    @IBOutlet var ItemText: UITextField!
-    
-    //入力された項目をString型で保存
-    var Index: String = ""
-    
-    //出費項目を保存した配列
-    var spendingItemArray:[String] = []
-
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //項目一覧が入っている配列のspArrayを呼び出す
+        var spendingArray: [String] = saveData.stringArrayForKey("spArray")!
+        
+        
+        //配列の中身をラベルに表示
+        label = UILabel(frame: CGRectMake(0,0,120,0)) //高さをゼロに
+        label.text = "Hello!, Hola!, Buon giorno!, Jambo!, Ciao!, Bonjour!, Guten tag!, こんにちは!"
+        label.backgroundColor = UIColor.redColor()
+        label.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
+        // 行数無制限
+        label.numberOfLines = 0;
+        // サイズを自動調整
+        label.sizeToFit()
+        
+        self.view.addSubview(label)
 
         // Do any additional setup after loading the view.
     }
@@ -33,18 +40,6 @@ class IndexViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func indexRegister(){
-        //テキストに入力された項目をIndexというString型の変数に入れる
-        Index = ItemText.text!
-        
-        //項目を配列に追加する
-        spendingItemArray.append(Index)
-        
-        //配列の内容をアプリ上に保存する
-        //キーはidArray
-        saveData.setObject(spendingItemArray, forKey: "idArray")
     }
     
 

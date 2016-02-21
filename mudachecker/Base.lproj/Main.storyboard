@@ -133,14 +133,89 @@
                                     <segue destination="L2W-2M-h8b" kind="unwind" unwindAction="back:" id="cQi-Tz-4dz"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="r0T-ti-GPF">
+                                <rect key="frame" x="77" y="141" width="167" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SfR-jI-NjQ">
+                                <rect key="frame" x="145" y="234" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="indexRegister" destination="mTe-Sj-uhH" eventType="touchUpInside" id="tzS-mJ-WWs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AsG-jL-Shh">
+                                <rect key="frame" x="239" y="52" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="項目一覧"/>
+                                <connections>
+                                    <segue destination="nEH-BX-zmL" kind="modal" id="UUX-xW-Va3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ItemText" destination="r0T-ti-GPF" id="iYm-mR-Sgt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06G-LP-QjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L2W-2M-h8b" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-25" y="1070"/>
+        </scene>
+        <!--Muda Array View Controller-->
+        <scene sceneID="VJ6-0t-sO8">
+            <objects>
+                <viewController id="nEH-BX-zmL" customClass="mudaArrayViewController" customModule="mudachecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0D-07-MnJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ムダ項目一覧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QmC-EE-Pjm">
+                                <rect key="frame" x="104" y="38" width="102" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yqn-8R-1GZ">
+                                <rect key="frame" x="104" y="67" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="項目登録画面へ"/>
+                                <connections>
+                                    <segue destination="mTe-Sj-uhH" kind="modal" id="rVY-q8-77Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3tS-ZW-MwV">
+                                <rect key="frame" x="12" y="29" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TOPへ"/>
+                                <connections>
+                                    <segue destination="HJG-XQ-e1s" kind="unwind" unwindAction="back:" id="WfH-By-vOJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMc-Ss-iBW">
+                                <rect key="frame" x="20" y="110" width="272" height="403"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="JMc-Ss-iBW" id="B2L-0t-DSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71W-bm-YQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="HJG-XQ-e1s" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="1744"/>
         </scene>
         <!--Goal View Controller-->
         <scene sceneID="wla-D2-y2u">
@@ -291,4 +366,7 @@
             <point key="canvasLocation" x="730" y="718"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rVY-q8-77Y"/>
+    </inferredMetricsTieBreakers>
 </document>
