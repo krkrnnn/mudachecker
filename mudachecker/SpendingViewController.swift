@@ -74,8 +74,10 @@ class SpendingViewController: UIViewController {
         spendingArray.append(spendinglValue2)
         spendingArray.append(spendinglValue3)
         
-        //出費金額を保存
+        //出費金額を配列に保存
         saveData.setObject(spendingArray, forKey: "spArray")
+        
+        
     }
     
 

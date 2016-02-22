@@ -14,17 +14,35 @@ class mudaArrayViewController: UIViewController {
     
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //項目一覧が入っている配列のspArrayを呼び出す
-        var spendingArray: [String] = saveData.stringArrayForKey("spArray")!
+        //String型に落として書き出し
+        var spendingArray: [String] = saveData.objectForKey("spArray") as! [String]
         
+        
+        //配列の内容をString型に書き出す
+        //var id: String = saveData.stringForKey("ID")!
+        var id: String = ""
+        for(var i = 0; i < spendingArray.count; i++){
+            id = id + "\n" + spendingArray[i]
+            
+            //idをアプリ内に保存
+            //saveData.setObject(id, forKey: "ID")
+            
+        }
+
+
         
         //配列の中身をラベルに表示
+        //表示途中！！！！！
         label = UILabel(frame: CGRectMake(0,0,120,0)) //高さをゼロに
-        label.text = "Hello!, Hola!, Buon giorno!, Jambo!, Ciao!, Bonjour!, Guten tag!, こんにちは!"
+        //ラベルに配列の内容を表示
+        label.text = id
+
         label.backgroundColor = UIColor.redColor()
         label.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
         // 行数無制限
