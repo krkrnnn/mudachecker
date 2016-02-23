@@ -22,7 +22,6 @@ class IndexViewController: UIViewController {
     var Index: String = ""
     
 
-
     
 
     override func viewDidLoad() {
@@ -30,7 +29,9 @@ class IndexViewController: UIViewController {
         
         //saveData.setObject(spendingItemArray, forKey: "spArray")
         //出費項目を保存した配列
-        var spendingItemArray:[String] = saveData.objectForKey("spArray") as! [String]
+        var spendingItemArray :[String]! = saveData.objectForKey("spArray") as! [String]
+        
+        
 
         // Do any additional setup after loading the view.
     }

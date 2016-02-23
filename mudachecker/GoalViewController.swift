@@ -19,21 +19,29 @@ class GoalViewController: UIViewController {
     //目標金額を表示するラベル
     @IBOutlet var goalLabel: UILabel!
     
+    var loadInt: Int = 0
     
     //目標金額の保存に使用
     //NSUerDefaultsインスタンスの生成
-    let saveData = NSUserDefaults.standardUserDefaults()
+    let saveData : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+    
+
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var loadInt: Int = saveData.integerForKey("GOAL")
-        var goal: String = String(loadInt)
         
-        goalLabel.numberOfLines = 2
-        goalLabel.text = "今月のムダ遣いの上限は" + "\n" + "\(goal)" + "円です"
+        if saveData.objectForKey("GOAL") != nil {
+            loadInt = saveData.objectForKey("GOAL") as! Int
+            goalLabel.numberOfLines = 2
+            var goal: String = String(loadInt)
+            goalLabel.text = "今月のムダ遣いの上限は" + "\n" + "\(goal)" + "円です"
+        }
+
+        
+        
 
 
         // Do any additional setup after loading the view.

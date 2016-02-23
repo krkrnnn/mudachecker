@@ -14,12 +14,17 @@ class MonthMudaViewController: UIViewController {
     //オーバー額を表示するラベル
     @IBOutlet var mudaLabel: UILabel!
     
-    //無駄金額
-    var mudaTotal :Int = 0
+    //出費金額の合計
+    var spTotal :Int = 0
+    
+    //無駄金額の合計
+    var mudaTotal: Int = 0
+    //リセットボタンが押されたかどうか
+    var resetButton: Int = 0
     
     
     //NSUerDefaultsインスタンスの生成
-    let saveData = NSUserDefaults.standardUserDefaults()
+    let saveData : NSUserDefaults = NSUserDefaults.standardUserDefaults()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +37,30 @@ class MonthMudaViewController: UIViewController {
         
         
         //ムダ金額を取得
-        mudaTotal = saveData.integerForKey("MUDA")
+        if saveData.objectForKey("SPSUM") != nil{
+            spTotal = saveData.objectForKey("SPSUM") as! Int
+        }
+        mudaTotal = spTotal - (saveData.objectForKey("GOAL") as! Int)
         
-        mudaLabel.numberOfLines = 2
-        //目標をオーバーした出費の額を表示
-        mudaLabel.text = String(mudaTotal) + "円" + "\n" + "ムダ遣いしています"
+        if mudaTotal > 0{
+            mudaLabel.numberOfLines = 2
+            //目標をオーバーした出費の額を表示
+            mudaLabel.text = String(mudaTotal) + "円" + "\n" + "ムダ遣いしています"
+        }else{
+            mudaLabel.numberOfLines = 2
+            //目標をオーバーしていなかったときの出費の額を表示
+            mudaLabel.text = "0円ムダ遣いしています"
+        }
+        
+//        if (saveData.objectForKey("RESET")) != nil {
+//            resetButton = saveData.objectForKey("RESET") as! Int
+//        }
+//        if resetButton == 1{
+//            var  muda: Int = 0
+//            var mudaSum: Int = 0
+//            saveData.setObject(muda, forKey: "MUDA")
+//            saveData.setObject(muda, forKey: "MUDASUM")
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,11 +69,15 @@ class MonthMudaViewController: UIViewController {
     }
     
     @IBAction func ResetButtonTapped(){
-        mudaTotal = 0
-        saveData.removeObjectForKey("MUDA")
+        
+        //出費金額を0円に書き換える
+        var sum: Int = 0
+       
+       saveData.setObject(sum, forKey: "SPSUM")
         mudaLabel.numberOfLines = 2
         //目標をオーバーした出費の額を表示
-        mudaLabel.text = String(mudaTotal) + "円" + "\n" + "ムダ遣いしています"
+        //mudaLabel.text =   String(saveData.objectForKey("MUDA")) + "\n" + "円ムダ遣いしています"
+        mudaLabel.text = "0円無駄遣いしています"
         
     }
     

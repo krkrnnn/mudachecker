@@ -15,30 +15,33 @@ class mudaArrayViewController: UIViewController {
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
     
+    var spendingArray: [String] = []
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //項目一覧が入っている配列のspArrayを呼び出す
         //String型に落として書き出し
-        var spendingArray: [String] = saveData.objectForKey("spArray") as! [String]
+        spendingArray = saveData.objectForKey("spArray") as! [String]
         
         
         //配列の内容をString型に書き出す
         //var id: String = saveData.stringForKey("ID")!
         var id: String = ""
-        for(var i = 0; i < spendingArray.count; i++){
-            id = id + "\n" + spendingArray[i]
+        if (spendingArray.count > 0){
+            for(var i = 0; i < spendingArray.count; i++){
+                id = id + "\n" + spendingArray[i]
             
-            //idをアプリ内に保存
-            //saveData.setObject(id, forKey: "ID")
+                //idをアプリ内に保存
+                //saveData.setObject(id, forKey: "ID")
             
+            }
         }
 
 
         
         //配列の中身をラベルに表示
-        //表示途中！！！！！
         label = UILabel(frame: CGRectMake(0,0,120,0)) //高さをゼロに
         //ラベルに配列の内容を表示
         label.text = id
@@ -51,13 +54,19 @@ class mudaArrayViewController: UIViewController {
         label.sizeToFit()
         
         self.view.addSubview(label)
-
+        
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //リセットボタン
+    @IBAction func resetButtonTapped(){
+        saveData.removeObjectForKey("spArray")
+        label.text = ""
     }
     
 
