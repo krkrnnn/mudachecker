@@ -8,12 +8,18 @@
 
 import UIKit
 
-class SpendingViewController: UIViewController {
+private let unselectedRow = -1
+
+class SpendingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     //出費金額を入力するフィールド
     @IBOutlet var spendingText1: UITextField!
 
+    //出費一覧を表示するテーブルビュー
+    @IBOutlet weak var memoListView: UITableView!
     
+    var memoList: [String] = []
+    var editRow: Int = unselectedRow
     
     //出費金額を入れる配列
     var spendingArray: [Int] = []
@@ -43,9 +49,15 @@ class SpendingViewController: UIViewController {
             sum = saveData.objectForKey("SPSUM") as! Int
         }
         
-//        if saveData.objectForKey("RESET") != nil{
-//            reset = saveData.objectForKey("RESET") as! Int
-//        }
+        //メモ参考追加
+        memoListView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        spendingText1.becomeFirstResponder()
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let loadedMemoList = defaults.objectForKey("MEMO_LIST")
+        if (loadedMemoList as? [String] != nil) {
+            memoList = loadedMemoList as! [String]
+        }
 
     }
 
@@ -64,26 +76,11 @@ class SpendingViewController: UIViewController {
         spendinglValue1 = Int(spendingText1.text!)!
 
         
-        //入力した合計値を計算
-//        if(reset == 1){
-//            sum = 0
-//        }
-        
         //出費合計
         sum = sum + spendinglValue1
         
         //出費合計金額を保存
         saveData.setObject(sum, forKey: "SPSUM")
-        
-        //目標値とのオーバー金額を計算
-        //var mudaValue = sum - saveData.integerForKey("GOAL")
-        
-        //無駄金額を保存
-        //saveData.setObject(mudaValue, forKey: "MUDA")
-
-//        
-//        reset = 0
-//        saveData.setObject(reset, forKey: "RESET")
         
         
         //出費金額を配列に保存
@@ -96,6 +93,59 @@ class SpendingViewController: UIViewController {
         
     }
     
+    //出費登録ボタンが押されたとき一覧に保存
+    @IBAction func tapSubmitButton(sender: UIButton) {
+        applyMemo()
+    }
+    
+    
+    //以下、メモ参考追加部分
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return memoList.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        if indexPath.row >= memoList.count {
+            return cell
+        }
+        
+        cell.textLabel?.text = memoList[indexPath.row]
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row >= memoList.count {
+            return
+        }
+        editRow = indexPath.row
+        spendingText1.text = memoList[editRow]
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        applyMemo()
+        return true
+    }
+    
+    func applyMemo() {
+        if spendingText1.text == nil {
+            return
+        }
+        
+        if editRow == unselectedRow {
+            memoList.append(spendingText1.text!)
+        } else {
+            memoList[editRow] = spendingText1.text!
+        }
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(memoList, forKey: "MEMO_LIST")
+        
+        spendingText1.text = ""
+        editRow = unselectedRow
+        memoListView.reloadData()
+    }
+
 
     /*
     // MARK: - Navigation

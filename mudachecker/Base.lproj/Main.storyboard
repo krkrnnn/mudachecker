@@ -29,9 +29,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jt-pY-neX">
-                                <rect key="frame" x="130" y="286" width="60" height="30"/>
+                                <rect key="frame" x="108" y="286" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="出費入力"/>
+                                <state key="normal" title="出費入力・一覧"/>
                                 <connections>
                                     <segue destination="IiJ-dl-F2D" kind="modal" identifier="toSpending" id="wlB-xz-obJ"/>
                                 </connections>
@@ -305,21 +305,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Kvd-NB-s1C">
-                                <rect key="frame" x="107" y="208" width="97" height="30"/>
+                                <rect key="frame" x="90" y="99" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="IiJ-dl-F2D" id="k2N-9p-7tP"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZfQ-tY-HxF">
-                                <rect key="frame" x="103" y="130" width="105" height="30"/>
+                                <rect key="frame" x="222" y="60" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="出費を保存する"/>
+                                <state key="normal" title="出費を保存"/>
                                 <connections>
                                     <action selector="spendingRegisterButtonTapped" destination="IiJ-dl-F2D" eventType="touchUpInside" id="gIa-Do-oKn"/>
+                                    <action selector="tapSubmitButton:" destination="IiJ-dl-F2D" eventType="touchUpInside" id="GSV-T3-xXV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="円" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tmy-GN-UzM">
-                                <rect key="frame" x="251" y="217" width="17" height="21"/>
+                                <rect key="frame" x="245" y="108" width="17" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -333,10 +337,20 @@
                                     <segue destination="7Yr-fH-Bx9" kind="unwind" unwindAction="back:" id="bvk-Th-AVv"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kjb-0s-72d">
+                                <rect key="frame" x="20" y="144" width="280" height="404"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IiJ-dl-F2D" id="Ldv-Qb-BOa"/>
+                                    <outlet property="delegate" destination="IiJ-dl-F2D" id="JFW-oT-Q2G"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="memoListView" destination="Kjb-0s-72d" id="JDP-wj-Fwa"/>
                         <outlet property="spendingText1" destination="Kvd-NB-s1C" id="vtH-iO-FQZ"/>
                     </connections>
                 </viewController>
@@ -347,6 +361,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rVY-q8-77Y"/>
+        <segue reference="ktV-Hi-ZfS"/>
     </inferredMetricsTieBreakers>
 </document>
