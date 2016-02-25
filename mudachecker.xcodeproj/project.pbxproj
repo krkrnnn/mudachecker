@@ -11,6 +11,10 @@
 		944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB11C7326F00013A9D8 /* IndexViewController.swift */; };
 		944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */; };
 		944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB51C7327150013A9D8 /* SpendingViewController.swift */; };
+		94826CAC1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */; };
+		94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */; };
+		94826CAE1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */; };
+		94826CAF1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CAB1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png */; };
 		94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562EB1C79885C00CAADFA /* Default-568h@2x.png */; };
 		94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562EC1C79885C00CAADFA /* Default-667h@2x.png */; };
 		94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562ED1C79885C00CAADFA /* Default-736h@3x.png */; };
@@ -46,6 +50,10 @@
 		944C7CB11C7326F00013A9D8 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMudaViewController.swift; sourceTree = "<group>"; };
 		944C7CB51C7327150013A9D8 /* SpendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
+		94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン４.png"; sourceTree = "<group>"; };
+		94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン３.png"; sourceTree = "<group>"; };
+		94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン２.png"; sourceTree = "<group>"; };
+		94826CAB1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン１.png"; sourceTree = "<group>"; };
 		94D562EB1C79885C00CAADFA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		94D562EC1C79885C00CAADFA /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		94D562ED1C79885C00CAADFA /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 		94ECC3FF1C72CFCE00C48325 /* mudachecker */ = {
 			isa = PBXGroup;
 			children = (
+				94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */,
+				94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */,
+				94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */,
+				94826CAB1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png */,
 				94D562EA1C79885C00CAADFA /* Defaults-master */,
 				94ECC4001C72CFCE00C48325 /* AppDelegate.swift */,
 				94ECC4021C72CFCE00C48325 /* ViewController.swift */,
@@ -264,10 +276,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94826CAF1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png in Resources */,
+				94826CAC1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png in Resources */,
 				94ECC40B1C72CFCF00C48325 /* LaunchScreen.storyboard in Resources */,
+				94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */,
 				94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */,
 				94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */,
 				94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */,
+				94826CAE1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png in Resources */,
 				94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */,
 				94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */,
 			);

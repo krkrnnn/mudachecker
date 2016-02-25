@@ -41,7 +41,9 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //テキストフィールドのキーボードを数字に
+        spendingText1.keyboardType = UIKeyboardType.NumberPad
 
         // Do any additional setup after loading the view.
         

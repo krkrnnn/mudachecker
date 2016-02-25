@@ -13,7 +13,7 @@ class GoalViewController: UIViewController {
     //設定する目標金額を入力するフィールド
     @IBOutlet var goalText: UITextField!
     
-
+    
     
     
     //目標金額を表示するラベル
@@ -32,6 +32,8 @@ class GoalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //テキストフィールドのキーボードを数字に
+        goalText.keyboardType = UIKeyboardType.NumberPad
         
         if saveData.objectForKey("GOAL") != nil {
             loadInt = saveData.objectForKey("GOAL") as! Int

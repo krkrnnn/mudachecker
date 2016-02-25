@@ -20,36 +20,36 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uUL-x5-MMQ">
-                                <rect key="frame" x="108" y="188" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uUL-x5-MMQ">
+                                <rect key="frame" x="63" y="117" width="194" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="今月のムダ遣い"/>
+                                <state key="normal" title="今月のムダ遣い" image="ムダ警告アプリ　ボタン１.png"/>
                                 <connections>
                                     <segue destination="kpj-gN-1Uc" kind="modal" identifier="toMonthMuda" id="7UR-b2-s44"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Jt-pY-neX">
-                                <rect key="frame" x="108" y="286" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Jt-pY-neX">
+                                <rect key="frame" x="63" y="222" width="194" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="出費入力・一覧"/>
+                                <state key="normal" title="出費入力・一覧" image="ムダ警告アプリ　ボタン２.png"/>
                                 <connections>
                                     <segue destination="IiJ-dl-F2D" kind="modal" identifier="toSpending" id="wlB-xz-obJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nDw-wS-ZxJ">
-                                <rect key="frame" x="108" y="471" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MRx-Ls-ao8">
+                                <rect key="frame" x="63" y="330" width="198" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ムダ項目の登録"/>
-                                <connections>
-                                    <segue destination="mTe-Sj-uhH" kind="modal" identifier="toIndex" id="ktV-Hi-ZfS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MRx-Ls-ao8">
-                                <rect key="frame" x="130" y="380" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="目標設定"/>
+                                <state key="normal" title="目標設定" image="ムダ警告アプリ　ボタン３.png"/>
                                 <connections>
                                     <segue destination="7hQ-Es-Tyg" kind="modal" identifier="toGoal" id="IIC-Ni-bG7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nDw-wS-ZxJ">
+                                <rect key="frame" x="63" y="432" width="202" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ムダ項目の登録" image="ムダ警告アプリ　ボタン４.png"/>
+                                <connections>
+                                    <segue destination="mTe-Sj-uhH" kind="modal" identifier="toIndex" id="ktV-Hi-ZfS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -165,7 +165,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06G-LP-QjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L2W-2M-h8b" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="1070"/>
+            <point key="canvasLocation" x="21" y="1063"/>
         </scene>
         <!--Muda Array View Controller-->
         <scene sceneID="VJ6-0t-sO8">
@@ -357,10 +357,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zn6-e6-G7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Yr-fH-Bx9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="730" y="718"/>
+            <point key="canvasLocation" x="746" y="694"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ムダ警告アプリ　ボタン１.png" width="500" height="213"/>
+        <image name="ムダ警告アプリ　ボタン２.png" width="500" height="213"/>
+        <image name="ムダ警告アプリ　ボタン３.png" width="500" height="213"/>
+        <image name="ムダ警告アプリ　ボタン４.png" width="500" height="213"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ktV-Hi-ZfS"/>
+        <segue reference="rVY-q8-77Y"/>
     </inferredMetricsTieBreakers>
 </document>
