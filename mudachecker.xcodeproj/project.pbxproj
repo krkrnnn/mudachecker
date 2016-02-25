@@ -11,6 +11,8 @@
 		944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB11C7326F00013A9D8 /* IndexViewController.swift */; };
 		944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */; };
 		944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB51C7327150013A9D8 /* SpendingViewController.swift */; };
+		9461E4351C7EAD6D001E975D /* SpendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461E4331C7EAD6D001E975D /* SpendingTableViewCell.swift */; };
+		9461E4361C7EAD6D001E975D /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9461E4341C7EAD6D001E975D /* ListTableViewCell.xib */; };
 		94826CAC1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */; };
 		94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */; };
 		94826CAE1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */; };
@@ -50,6 +52,8 @@
 		944C7CB11C7326F00013A9D8 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMudaViewController.swift; sourceTree = "<group>"; };
 		944C7CB51C7327150013A9D8 /* SpendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
+		9461E4331C7EAD6D001E975D /* SpendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingTableViewCell.swift; sourceTree = "<group>"; };
+		9461E4341C7EAD6D001E975D /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン４.png"; sourceTree = "<group>"; };
 		94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン３.png"; sourceTree = "<group>"; };
 		94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン２.png"; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 				944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */,
 				944C7CB51C7327150013A9D8 /* SpendingViewController.swift */,
 				94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */,
+				9461E4331C7EAD6D001E975D /* SpendingTableViewCell.swift */,
+				9461E4341C7EAD6D001E975D /* ListTableViewCell.xib */,
 			);
 			path = mudachecker;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 				94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */,
 				94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */,
 				94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */,
+				9461E4361C7EAD6D001E975D /* ListTableViewCell.xib in Resources */,
 				94ECC4061C72CFCF00C48325 /* Main.storyboard in Resources */,
 				94826CAE1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png in Resources */,
 				94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */,
@@ -311,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				944C7CB01C7326CA0013A9D8 /* GoalViewController.swift in Sources */,
+				9461E4351C7EAD6D001E975D /* SpendingTableViewCell.swift in Sources */,
 				944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */,
 				94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */,
 				94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */,
