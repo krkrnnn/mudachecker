@@ -18,6 +18,16 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
     //出費項目を入力するフィールド
     @IBOutlet var koumokuText: UITextField!
     
+    //年を入力するフィールド
+    @IBOutlet var yearText: UITextField!
+    
+    //月を入力するフィールド
+    @IBOutlet var monthText: UITextField!
+    
+    //日を入力するフィールド
+    @IBOutlet var dayText: UITextField!
+    
+    
 
     //出費一覧を表示するテーブルビュー
     @IBOutlet weak var spListView: UITableView!
@@ -28,11 +38,7 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
     var spList: [AnyObject] = []
     //var editRow: Int = unselectedRow
     
-//    //出費項目を入れている配列
-//    var koumokuList: [String] = []
-//    
-//    //出費金額を入れる配列
-//    var spendingArray: [Int] = []
+
     
     //NSUerDefaultsインスタンスの生成
     let saveData = NSUserDefaults.standardUserDefaults()
@@ -52,12 +58,22 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //日付の取得
+        let now = NSDate() // 現在日時の取得
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.locale = NSLocale(localeIdentifier: "ja_JP")  // JPロケール
+        dateFormatter.locale = NSLocale(localeIdentifier: "en_US") // ロケールの設定
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm:ss" // 日付フォーマットの設定
+        
+        
         spListView.registerNib(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
-        //tableView.registerNib(UINib(nibName: "SpendingTableViewCell", bundle: nil),
-          //  forCellReuseIdentifier: "cell")
         //テキストフィールドのキーボードを数字に
         spendingText1.keyboardType = UIKeyboardType.NumberPad
+        yearText.keyboardType = UIKeyboardType.NumberPad
+        monthText.keyboardType = UIKeyboardType.NumberPad
+        dayText.keyboardType = UIKeyboardType.NumberPad
 
         // Do any additional setup after loading the view.
         
@@ -71,26 +87,6 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
             spList = saveData.arrayForKey("SPLIST")!
         }
         
-        //メモ参考追加 出費額
-//        memoListView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-//        spendingText1.becomeFirstResponder()
-//        
-//        let defaults = NSUserDefaults.standardUserDefaults()
-//        let loadedMemoList = defaults.objectForKey("MEMO_LIST")
-//        if (loadedMemoList as? [String] != nil) {
-//            memoList = loadedMemoList as! [String]
-//        }
-        
-//        //メモ参考追加　品目
-//        koumokuListView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell2")
-//        koumokuText.becomeFirstResponder()
-//        
-//        let save = NSUserDefaults.standardUserDefaults()
-//        let loadedKoumokuList = save.objectForKey("KOUMOKU_LIST")
-//        if (loadedKoumokuList as? [String] != nil) {
-//            memoList = loadedKoumokuList as! [String]
-//        }
-
        
 
     }
@@ -125,24 +121,13 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
         saveData.setObject(sum, forKey: "SPSUM")
         
         
-        
-        //出費金額を配列に保存
-        //spendingArray.append(spendinglValue1)
-  
-        
-        //出費金額を配列に保存
-        //saveData.setObject(spendingArray, forKey: "spArray")
-        
-        
     }
     
     //出費登録ボタンが押されたとき一覧に保存
     @IBAction func tapSubmitButton(sender: UIButton) {
-        //applyMemo()
-        
-        
+       
         let spendingArray =
-        ["品目":koumokuText.text!, "値段":spendingText1.text!]
+        ["品目":yearText.text! + "年 " + monthText.text! + "月 " + dayText.text! + "日 " + koumokuText.text!, "値段":spendingText1.text!]
         
         spList.append(spendingArray)
         saveData.setObject(spList, forKey: "SPEND")
@@ -189,54 +174,20 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    //スワイプしてCellを削除
+    func tableView(tableView: UITableView,canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        return true
+    }
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            spList.removeAtIndex(indexPath.row)
+            //配列を再び保存
+            saveData.setObject(spList, forKey: "SPEND")
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+    }
     
-    //以下、メモ参考追加部分 項目どうする？
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return memoList.count
-//    }
-//   
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-//        if indexPath.row >= memoList.count {
-//            return cell
-//        }
-//        
-//        cell.textLabel?.text = memoList[indexPath.row]
-//        return cell
-//    }
-//    
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        if indexPath.row >= memoList.count {
-//            return
-//        }
-//        editRow = indexPath.row
-//        spendingText1.text = memoList[editRow]
-//    }
-//    
-//    func textFieldShouldReturn(textField: UITextField) -> Bool {
-//        applyMemo()
-//        return true
-//    }
-//    
-//    func applyMemo() {
-//        if spendingText1.text == nil {
-//            return
-//        }
-//        
-//        if editRow == unselectedRow {
-//            memoList.append(spendingText1.text!)
-//        } else {
-//            memoList[editRow] = spendingText1.text!
-//        }
-//        
-//        let defaults = NSUserDefaults.standardUserDefaults()
-//        defaults.setObject(memoList, forKey: "MEMO_LIST")
-//        
-//        spendingText1.text = ""
-//        editRow = unselectedRow
-//        memoListView.reloadData()
-//    }
     
 
     /*
