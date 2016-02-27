@@ -125,9 +125,57 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
     
     //出費登録ボタンが押されたとき一覧に保存
     @IBAction func tapSubmitButton(sender: UIButton) {
-       
+        
+//        //年の取得
+//        let datey = NSDate() // 現在日時の取得
+//        
+//        let formaty = NSDateFormatter()
+//        formaty.locale = NSLocale(localeIdentifier: "ja_JP")  // JPロケール
+//        formaty.locale = NSLocale(localeIdentifier: "en_US") // ロケールの設定
+//        formaty.dateFormat = "yyyy" // 日付フォーマットの設定
+//        
+//        //月の取得
+//        let datem = NSDate() // 現在日時の取得
+//        
+//        let formatm = NSDateFormatter()
+//        formatm.locale = NSLocale(localeIdentifier: "ja_JP")  // JPロケール
+//        formatm.locale = NSLocale(localeIdentifier: "en_US") // ロケールの設定
+//        formatm.dateFormat = "MM" // 日付フォーマットの設定
+//        
+//        //日の取得
+//        let dated = NSDate() // 現在日時の取得
+//        
+//        let formatd = NSDateFormatter()
+//        formatd.locale = NSLocale(localeIdentifier: "ja_JP")  // JPロケール
+//        formatd.locale = NSLocale(localeIdentifier: "en_US") // ロケールの設定
+//        formatd.dateFormat = "dd" // 日付フォーマットの設定
+//        
+//        var year = formaty.stringFromDate(datey)
+//        var month = formaty.stringFromDate(datem)
+//        var day = formatd.stringFromDate(dated)
+        
+        let date = NSDate()
+        let cal = NSCalendar(identifier: NSGregorianCalendar)
+        let comps = cal!.components([NSCalendarUnit.Year, NSCalendarUnit.Month, NSCalendarUnit.Day,NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second],fromDate: date)
+        var year = String(comps.year)
+        var month = String(comps.month)
+        var day = String(comps.day)
+        
+        
+        if yearText.text != ""{
+            year = yearText.text!
+        }
+        if monthText.text != ""{
+            month = monthText.text!
+        }
+        if dayText.text != ""{
+            day = dayText.text!
+        }
+        
         let spendingArray =
-        ["品目":yearText.text! + "年 " + monthText.text! + "月 " + dayText.text! + "日 " + koumokuText.text!, "値段":spendingText1.text!]
+        ["品目":"\(year)" + "年 " + "\(month)" + "月 " + "\(day)" + "日  " + koumokuText.text!, "値段":spendingText1.text!]
+
+//        ["品目":yearText.text! + "年 " + monthText.text! + "月 " + dayText.text! + "日 " + koumokuText.text!, "値段":spendingText1.text!]
         
         spList.append(spendingArray)
         saveData.setObject(spList, forKey: "SPEND")

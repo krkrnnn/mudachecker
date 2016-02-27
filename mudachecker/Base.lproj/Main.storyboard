@@ -20,16 +20,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uUL-x5-MMQ">
-                                <rect key="frame" x="63" y="117" width="194" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="今月のムダ遣い" image="ムダ警告アプリ　ボタン１.png"/>
-                                <connections>
-                                    <segue destination="kpj-gN-1Uc" kind="modal" identifier="toMonthMuda" id="7UR-b2-s44"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Jt-pY-neX">
-                                <rect key="frame" x="63" y="222" width="194" height="92"/>
+                                <rect key="frame" x="63" y="277" width="194" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="出費入力・一覧" image="ムダ警告アプリ　ボタン２.png"/>
                                 <connections>
@@ -37,19 +29,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MRx-Ls-ao8">
-                                <rect key="frame" x="63" y="330" width="198" height="94"/>
+                                <rect key="frame" x="61" y="396" width="198" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="目標設定" image="ムダ警告アプリ　ボタン３.png"/>
                                 <connections>
                                     <segue destination="7hQ-Es-Tyg" kind="modal" identifier="toGoal" id="IIC-Ni-bG7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nDw-wS-ZxJ">
-                                <rect key="frame" x="63" y="432" width="202" height="92"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uUL-x5-MMQ">
+                                <rect key="frame" x="63" y="153" width="194" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ムダ項目の登録" image="ムダ警告アプリ　ボタン４.png"/>
+                                <state key="normal" title="今月のムダ遣い" image="ムダ警告アプリ　ボタン１.png"/>
                                 <connections>
-                                    <segue destination="mTe-Sj-uhH" kind="modal" identifier="toIndex" id="ktV-Hi-ZfS"/>
+                                    <segue destination="kpj-gN-1Uc" kind="modal" identifier="toMonthMuda" id="7UR-b2-s44"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -390,7 +382,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9YL-vc-v0k">
-                                <rect key="frame" x="176" y="85" width="31" height="30"/>
+                                <rect key="frame" x="176" y="85" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -403,7 +395,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="xo3-sK-SnV">
-                                <rect key="frame" x="237" y="86" width="28" height="30"/>
+                                <rect key="frame" x="237" y="86" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -437,9 +429,5 @@
         <image name="ムダ警告アプリ　ボタン１.png" width="500" height="213"/>
         <image name="ムダ警告アプリ　ボタン２.png" width="500" height="213"/>
         <image name="ムダ警告アプリ　ボタン３.png" width="500" height="213"/>
-        <image name="ムダ警告アプリ　ボタン４.png" width="500" height="213"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="rVY-q8-77Y"/>
-    </inferredMetricsTieBreakers>
 </document>
