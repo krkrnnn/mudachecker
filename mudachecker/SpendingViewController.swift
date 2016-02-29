@@ -206,8 +206,9 @@ class SpendingViewController: UIViewController, UITableViewDelegate, UITableView
     
     //セルの個数を指定
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) ->Int {
-        return spList.count
+        return spList.count //上下を追加するから３倍
     }
+    
     
     //セルの中身の表示の仕方を設定
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
