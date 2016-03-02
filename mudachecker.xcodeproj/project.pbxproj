@@ -43,9 +43,12 @@
 		94B9720C1C86C93900586799 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B971F61C86C93900586799 /* Icon@2x.png */; };
 		94B9720D1C86C93900586799 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B971F71C86C93900586799 /* iTunesArtwork.png */; };
 		94B9720E1C86C93900586799 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B971F81C86C93900586799 /* iTunesArtwork@2x.png */; };
-		94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562EB1C79885C00CAADFA /* Default-568h@2x.png */; };
-		94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562EC1C79885C00CAADFA /* Default-667h@2x.png */; };
-		94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D562ED1C79885C00CAADFA /* Default-736h@3x.png */; };
+		94B972121C86D2D900586799 /* 起動画面　mudachecker.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B972101C86D2D900586799 /* 起動画面　mudachecker.png */; };
+		94B972131C86D2D900586799 /* 起動画面muda-大.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B972111C86D2D900586799 /* 起動画面muda-大.png */; };
+		94B972191C86E11B00586799 /* 起動画面３.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B972181C86E11B00586799 /* 起動画面３.png */; };
+		94B9721E1C86E5C800586799 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B9721B1C86E5C800586799 /* Default-568h@2x.png */; };
+		94B9721F1C86E5C800586799 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B9721C1C86E5C800586799 /* Default-667h@2x.png */; };
+		94B972201C86E5C800586799 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94B9721D1C86E5C800586799 /* Default-736h@3x.png */; };
 		94D562F21C7991DC00CAADFA /* mudaArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */; };
 		94E2D1FD1C84616F005C4D8D /* ムダ背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E2D1FC1C84616F005C4D8D /* ムダ背景.png */; };
 		94E2D1FF1C846211005C4D8D /* アプリ背景2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E2D1FE1C846211005C4D8D /* アプリ背景2.png */; };
@@ -127,9 +130,12 @@
 		94B971F61C86C93900586799 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		94B971F71C86C93900586799 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		94B971F81C86C93900586799 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		94D562EB1C79885C00CAADFA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		94D562EC1C79885C00CAADFA /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
-		94D562ED1C79885C00CAADFA /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		94B972101C86D2D900586799 /* 起動画面　mudachecker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "起動画面　mudachecker.png"; sourceTree = "<group>"; };
+		94B972111C86D2D900586799 /* 起動画面muda-大.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "起動画面muda-大.png"; sourceTree = "<group>"; };
+		94B972181C86E11B00586799 /* 起動画面３.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "起動画面３.png"; sourceTree = "<group>"; };
+		94B9721B1C86E5C800586799 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		94B9721C1C86E5C800586799 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		94B9721D1C86E5C800586799 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mudaArrayViewController.swift; sourceTree = "<group>"; };
 		94E2D1FC1C84616F005C4D8D /* ムダ背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ背景.png"; sourceTree = "<group>"; };
 		94E2D1FE1C846211005C4D8D /* アプリ背景2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アプリ背景2.png"; sourceTree = "<group>"; };
@@ -191,6 +197,8 @@
 		94B971E21C86C93900586799 /* ios2 */ = {
 			isa = PBXGroup;
 			children = (
+				94B972101C86D2D900586799 /* 起動画面　mudachecker.png */,
+				94B972111C86D2D900586799 /* 起動画面muda-大.png */,
 				94B971E31C86C93900586799 /* AppIcon.appiconset */,
 				94B971F01C86C93900586799 /* Icon-60.png */,
 				94B971F11C86C93900586799 /* Icon-72.png */,
@@ -224,14 +232,15 @@
 			path = AppIcon.appiconset;
 			sourceTree = "<group>";
 		};
-		94D562EA1C79885C00CAADFA /* Defaults-master */ = {
+		94B9721A1C86E5C800586799 /* Defaults-master */ = {
 			isa = PBXGroup;
 			children = (
-				94D562EB1C79885C00CAADFA /* Default-568h@2x.png */,
-				94D562EC1C79885C00CAADFA /* Default-667h@2x.png */,
-				94D562ED1C79885C00CAADFA /* Default-736h@3x.png */,
+				94B9721B1C86E5C800586799 /* Default-568h@2x.png */,
+				94B9721C1C86E5C800586799 /* Default-667h@2x.png */,
+				94B9721D1C86E5C800586799 /* Default-736h@3x.png */,
 			);
-			path = "Defaults-master";
+			name = "Defaults-master";
+			path = "ios2/Defaults-master";
 			sourceTree = "<group>";
 		};
 		94ECC3F41C72CFCE00C48325 = {
@@ -257,6 +266,7 @@
 		94ECC3FF1C72CFCE00C48325 /* mudachecker */ = {
 			isa = PBXGroup;
 			children = (
+				94B9721A1C86E5C800586799 /* Defaults-master */,
 				94B971E21C86C93900586799 /* ios2 */,
 				942F1ED91C85327300B2C95C /* maximラベル.png */,
 				94E2D2161C84945F005C4D8D /* リセットボタン.png */,
@@ -279,11 +289,11 @@
 				94E2D1FE1C846211005C4D8D /* アプリ背景2.png */,
 				94E2D1FC1C84616F005C4D8D /* ムダ背景.png */,
 				9428BAE61C86899B00D74C5C /* maximボタン.png */,
+				94B972181C86E11B00586799 /* 起動画面３.png */,
 				94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */,
 				94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */,
 				94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */,
 				94826CAB1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png */,
-				94D562EA1C79885C00CAADFA /* Defaults-master */,
 				94ECC4001C72CFCE00C48325 /* AppDelegate.swift */,
 				94ECC4021C72CFCE00C48325 /* ViewController.swift */,
 				94ECC4041C72CFCF00C48325 /* Main.storyboard */,
@@ -433,9 +443,12 @@
 				94B9720B1C86C93900586799 /* Icon.png in Resources */,
 				94E2D2141C848EF5005C4D8D /* item.png in Resources */,
 				94B972071C86C93900586799 /* Icon-72.png in Resources */,
+				94B972121C86D2D900586799 /* 起動画面　mudachecker.png in Resources */,
 				942F1EDA1C85327300B2C95C /* maximラベル.png in Resources */,
 				9428BAE71C86899B00D74C5C /* maximボタン.png in Resources */,
+				94B972131C86D2D900586799 /* 起動画面muda-大.png in Resources */,
 				94B972061C86C93900586799 /* Icon-60.png in Resources */,
+				94B9721E1C86E5C800586799 /* Default-568h@2x.png in Resources */,
 				94826CAF1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png in Resources */,
 				94B971FC1C86C93900586799 /* Icon-40@2x.png in Resources */,
 				94E2D20D1C848CC1005C4D8D /* 出費保存.png in Resources */,
@@ -443,6 +456,7 @@
 				94826CAC1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png in Resources */,
 				94B9720C1C86C93900586799 /* Icon@2x.png in Resources */,
 				94E2D2191C84945F005C4D8D /* リセットボタン.png in Resources */,
+				94B9721F1C86E5C800586799 /* Default-667h@2x.png in Resources */,
 				94E2D20F1C848CC1005C4D8D /* totallabel.png in Resources */,
 				94ECC40B1C72CFCF00C48325 /* LaunchScreen.storyboard in Resources */,
 				94E2D21B1C84945F005C4D8D /* topへボタン.png in Resources */,
@@ -450,13 +464,14 @@
 				94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */,
 				942F1EDC1C85330D00B2C95C /* maxim2ラベル.png in Resources */,
 				94B972001C86C93900586799 /* Icon-76.png in Resources */,
+				94B972201C86E5C800586799 /* Default-736h@3x.png in Resources */,
 				94B971FE1C86C93900586799 /* Icon-60@2x.png in Resources */,
 				94E2D2051C847E0B005C4D8D /* ボタン＿ムダアプリ_目標.png in Resources */,
 				94B972091C86C93900586799 /* Icon-Small-50.png in Resources */,
-				94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */,
 				94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */,
 				9461E4361C7EAD6D001E975D /* ListTableViewCell.xib in Resources */,
 				94B972051C86C93900586799 /* Icon-Small@3x.png in Resources */,
+				94B972191C86E11B00586799 /* 起動画面３.png in Resources */,
 				94E2D20E1C848CC1005C4D8D /* 目標ラベル.png in Resources */,
 				94B972081C86C93900586799 /* Icon-72@2x.png in Resources */,
 				94E2D1FF1C846211005C4D8D /* アプリ背景2.png in Resources */,
@@ -472,8 +487,6 @@
 				94E2D2151C848EF5005C4D8D /* date.png in Resources */,
 				94E2D2031C847E0B005C4D8D /* ボタン＿ムダアプリtotalbutton.png in Resources */,
 				94B972041C86C93900586799 /* Icon-Small@2x.png in Resources */,
-				94D562EF1C79885C00CAADFA /* Default-667h@2x.png in Resources */,
-				94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */,
 				94B9720D1C86C93900586799 /* iTunesArtwork.png in Resources */,
 				94E2D1FD1C84616F005C4D8D /* ムダ背景.png in Resources */,
 				94E2D2071C8480D3005C4D8D /* ボタン＿ムダアプリラベルtop.png in Resources */,
