@@ -40,7 +40,11 @@ class MonthMudaViewController: UIViewController {
         if saveData.objectForKey("SPSUM") != nil{
             spTotal = saveData.objectForKey("SPSUM") as! Int
         }
-        mudaTotal = spTotal - (saveData.objectForKey("GOAL") as! Int)
+        
+        //mudaTotalがnilかどうか判別
+        if saveData.objectForKey("GOAL") != nil{
+            mudaTotal = spTotal - (saveData.objectForKey("GOAL") as! Int)
+        }
         
         if mudaTotal > 0{
             mudaLabel.numberOfLines = 2
