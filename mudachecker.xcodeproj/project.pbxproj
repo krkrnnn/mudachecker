@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9428BAE71C86899B00D74C5C /* maximボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = 9428BAE61C86899B00D74C5C /* maximボタン.png */; };
+		942F1ED81C8530A300B2C95C /* MaximViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942F1ED71C8530A300B2C95C /* MaximViewController.swift */; };
+		942F1EDA1C85327300B2C95C /* maximラベル.png in Resources */ = {isa = PBXBuildFile; fileRef = 942F1ED91C85327300B2C95C /* maximラベル.png */; };
+		942F1EDC1C85330D00B2C95C /* maxim2ラベル.png in Resources */ = {isa = PBXBuildFile; fileRef = 942F1EDB1C85330D00B2C95C /* maxim2ラベル.png */; };
 		944C7CB01C7326CA0013A9D8 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CAF1C7326CA0013A9D8 /* GoalViewController.swift */; };
 		944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB11C7326F00013A9D8 /* IndexViewController.swift */; };
 		944C7CB41C7327070013A9D8 /* MonthMudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */; };
 		944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944C7CB51C7327150013A9D8 /* SpendingViewController.swift */; };
 		9461E4351C7EAD6D001E975D /* SpendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9461E4331C7EAD6D001E975D /* SpendingTableViewCell.swift */; };
 		9461E4361C7EAD6D001E975D /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9461E4341C7EAD6D001E975D /* ListTableViewCell.xib */; };
+		946E1BFB1C8499F3003368A4 /* 背景2.png in Resources */ = {isa = PBXBuildFile; fileRef = 946E1BFA1C8499F3003368A4 /* 背景2.png */; };
 		94826CAC1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */; };
 		94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */; };
 		94826CAE1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png in Resources */ = {isa = PBXBuildFile; fileRef = 94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */; };
@@ -65,12 +70,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9428BAE61C86899B00D74C5C /* maximボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maximボタン.png"; sourceTree = "<group>"; };
+		942F1ED71C8530A300B2C95C /* MaximViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaximViewController.swift; sourceTree = "<group>"; };
+		942F1ED91C85327300B2C95C /* maximラベル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maximラベル.png"; sourceTree = "<group>"; };
+		942F1EDB1C85330D00B2C95C /* maxim2ラベル.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maxim2ラベル.png"; sourceTree = "<group>"; };
 		944C7CAF1C7326CA0013A9D8 /* GoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
 		944C7CB11C7326F00013A9D8 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		944C7CB31C7327070013A9D8 /* MonthMudaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMudaViewController.swift; sourceTree = "<group>"; };
 		944C7CB51C7327150013A9D8 /* SpendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingViewController.swift; sourceTree = "<group>"; };
 		9461E4331C7EAD6D001E975D /* SpendingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingTableViewCell.swift; sourceTree = "<group>"; };
 		9461E4341C7EAD6D001E975D /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		946E1BFA1C8499F3003368A4 /* 背景2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "背景2.png"; sourceTree = "<group>"; };
 		94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン４.png"; sourceTree = "<group>"; };
 		94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン３.png"; sourceTree = "<group>"; };
 		94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ムダ警告アプリ　ボタン２.png"; sourceTree = "<group>"; };
@@ -169,9 +179,12 @@
 		94ECC3FF1C72CFCE00C48325 /* mudachecker */ = {
 			isa = PBXGroup;
 			children = (
+				942F1ED91C85327300B2C95C /* maximラベル.png */,
 				94E2D2161C84945F005C4D8D /* リセットボタン.png */,
+				942F1EDB1C85330D00B2C95C /* maxim2ラベル.png */,
 				94E2D2171C84945F005C4D8D /* saveボタン.png */,
 				94E2D2181C84945F005C4D8D /* topへボタン.png */,
+				946E1BFA1C8499F3003368A4 /* 背景2.png */,
 				94E2D21C1C849598005C4D8D /* top2.png */,
 				94E2D2101C848EF5005C4D8D /* price.png */,
 				94E2D2111C848EF5005C4D8D /* item.png */,
@@ -186,6 +199,7 @@
 				94E2D2021C847E0B005C4D8D /* ボタン＿ムダアプリ_目標.png */,
 				94E2D1FE1C846211005C4D8D /* アプリ背景2.png */,
 				94E2D1FC1C84616F005C4D8D /* ムダ背景.png */,
+				9428BAE61C86899B00D74C5C /* maximボタン.png */,
 				94826CA81C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png */,
 				94826CA91C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png */,
 				94826CAA1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン２.png */,
@@ -204,6 +218,7 @@
 				94D562F11C7991DC00CAADFA /* mudaArrayViewController.swift */,
 				9461E4331C7EAD6D001E975D /* SpendingTableViewCell.swift */,
 				9461E4341C7EAD6D001E975D /* ListTableViewCell.xib */,
+				942F1ED71C8530A300B2C95C /* MaximViewController.swift */,
 			);
 			path = mudachecker;
 			sourceTree = "<group>";
@@ -334,6 +349,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E2D2141C848EF5005C4D8D /* item.png in Resources */,
+				942F1EDA1C85327300B2C95C /* maximラベル.png in Resources */,
+				9428BAE71C86899B00D74C5C /* maximボタン.png in Resources */,
 				94826CAF1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン１.png in Resources */,
 				94E2D20D1C848CC1005C4D8D /* 出費保存.png in Resources */,
 				94826CAC1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン４.png in Resources */,
@@ -342,6 +359,7 @@
 				94ECC40B1C72CFCF00C48325 /* LaunchScreen.storyboard in Resources */,
 				94E2D21B1C84945F005C4D8D /* topへボタン.png in Resources */,
 				94826CAD1C7C4D3E003DE190 /* ムダ警告アプリ　ボタン３.png in Resources */,
+				942F1EDC1C85330D00B2C95C /* maxim2ラベル.png in Resources */,
 				94E2D2051C847E0B005C4D8D /* ボタン＿ムダアプリ_目標.png in Resources */,
 				94D562EE1C79885C00CAADFA /* Default-568h@2x.png in Resources */,
 				94ECC4081C72CFCF00C48325 /* Assets.xcassets in Resources */,
@@ -360,6 +378,7 @@
 				94D562F01C79885C00CAADFA /* Default-736h@3x.png in Resources */,
 				94E2D1FD1C84616F005C4D8D /* ムダ背景.png in Resources */,
 				94E2D2071C8480D3005C4D8D /* ボタン＿ムダアプリラベルtop.png in Resources */,
+				946E1BFB1C8499F3003368A4 /* 背景2.png in Resources */,
 				94E2D2131C848EF5005C4D8D /* price.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +410,7 @@
 				94ECC4031C72CFCE00C48325 /* ViewController.swift in Sources */,
 				94ECC4011C72CFCE00C48325 /* AppDelegate.swift in Sources */,
 				94D562F21C7991DC00CAADFA /* mudaArrayViewController.swift in Sources */,
+				942F1ED81C8530A300B2C95C /* MaximViewController.swift in Sources */,
 				944C7CB61C7327150013A9D8 /* SpendingViewController.swift in Sources */,
 				944C7CB21C7326F00013A9D8 /* IndexViewController.swift in Sources */,
 			);

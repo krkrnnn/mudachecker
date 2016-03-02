@@ -52,15 +52,7 @@ class MonthMudaViewController: UIViewController {
             mudaLabel.text = "0円ムダ遣いしています"
         }
         
-//        if (saveData.objectForKey("RESET")) != nil {
-//            resetButton = saveData.objectForKey("RESET") as! Int
-//        }
-//        if resetButton == 1{
-//            var  muda: Int = 0
-//            var mudaSum: Int = 0
-//            saveData.setObject(muda, forKey: "MUDA")
-//            saveData.setObject(muda, forKey: "MUDASUM")
-//        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,7 +69,7 @@ class MonthMudaViewController: UIViewController {
         mudaLabel.numberOfLines = 2
         //目標をオーバーした出費の額を表示
         //mudaLabel.text =   String(saveData.objectForKey("MUDA")) + "\n" + "円ムダ遣いしています"
-        mudaLabel.text = "0円無駄遣いしています"
+        mudaLabel.text = "0円ムダ遣いしています"
         
     }
     

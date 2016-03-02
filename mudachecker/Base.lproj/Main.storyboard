@@ -13,10 +13,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アプリ背景2.png" id="zdk-uF-XOq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n1m-qY-pMz">
                                 <rect key="frame" x="72" y="52" width="176" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,6 +48,18 @@
                                 <rect key="frame" x="60" y="52" width="200" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mQy-JF-9vd">
+                                <rect key="frame" x="174" y="302" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="maximボタン.png"/>
+                                <connections>
+                                    <segue destination="YzP-gx-Zqt" kind="modal" identifier="to Maxim" id="5Kd-BO-zin"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2.png" id="zdk-uF-XOq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -68,7 +76,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アプリ背景2.png" id="L3Z-PM-Jun">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2.png" id="L3Z-PM-Jun">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -110,7 +118,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLD-Wn-VTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="pb6-k3-7J7" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="611" y="41"/>
+            <point key="canvasLocation" x="577" y="-123"/>
         </scene>
         <!--Index View Controller-->
         <scene sceneID="rPr-4L-dIa">
@@ -167,7 +175,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="06G-LP-QjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L2W-2M-h8b" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="21" y="1063"/>
+            <point key="canvasLocation" x="358" y="1782"/>
         </scene>
         <!--Muda Array View Controller-->
         <scene sceneID="VJ6-0t-sO8">
@@ -227,6 +235,48 @@
             </objects>
             <point key="canvasLocation" x="-19" y="1776"/>
         </scene>
+        <!--Maxim View Controller-->
+        <scene sceneID="jze-I2-wiS">
+            <objects>
+                <viewController id="YzP-gx-Zqt" customClass="MaximViewController" customModule="mudachecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fuo-Ee-A0F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2.png" id="yR8-Ob-Fzq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cL3-g7-zvP">
+                                <rect key="frame" x="101" y="429" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="top2.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="vCy-XK-Xlw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxim2ラベル.png" id="H94-1P-fMf">
+                                <rect key="frame" x="98" y="36" width="124" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fbc-Nd-lFA">
+                                <rect key="frame" x="30" y="204" width="270" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="fbc-Nd-lFA" id="PPF-oG-EOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yM3-3a-lUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="1058"/>
+        </scene>
         <!--Goal View Controller-->
         <scene sceneID="wla-D2-y2u">
             <objects>
@@ -235,7 +285,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アプリ背景2.png" id="KFt-n0-vku">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2.png" id="KFt-n0-vku">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -299,7 +349,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tc-gg-R3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="SjG-qO-B05" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="397" y="1070"/>
+            <point key="canvasLocation" x="505" y="1108"/>
         </scene>
         <!--Spending View Controller-->
         <scene sceneID="Mjg-54-LiB">
@@ -309,7 +359,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="アプリ背景2.png" id="lPJ-JK-0XK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景2.png" id="lPJ-JK-0XK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -459,15 +509,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zn6-e6-G7A" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Yr-fH-Bx9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="741" y="696"/>
+            <point key="canvasLocation" x="605" y="489"/>
         </scene>
     </scenes>
     <resources>
+        <image name="maxim2ラベル.png" width="124" height="48"/>
+        <image name="maximボタン.png" width="150" height="150"/>
         <image name="saveボタン.png" width="152" height="150"/>
         <image name="top2.png" width="152" height="150"/>
         <image name="topへボタン.png" width="152" height="150"/>
         <image name="totallabel.png" width="196" height="92"/>
-        <image name="アプリ背景2.png" width="750" height="1334"/>
         <image name="ボタン＿ムダtop2.png" width="196" height="92"/>
         <image name="ボタン＿ムダアプリ_目標.png" width="150" height="150"/>
         <image name="ボタン＿ムダアプリtotalbutton.png" width="150" height="150"/>
@@ -475,5 +526,6 @@
         <image name="リセットボタン.png" width="152" height="150"/>
         <image name="出費保存.png" width="196" height="92"/>
         <image name="目標ラベル.png" width="196" height="92"/>
+        <image name="背景2.png" width="750" height="1334"/>
     </resources>
 </document>
