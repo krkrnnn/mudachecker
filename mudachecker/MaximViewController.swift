@@ -41,6 +41,11 @@ class MaximViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //トップに戻るボタン
+    @IBAction func toTop(){
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 
     /*
     // MARK: - Navigation

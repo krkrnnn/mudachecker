@@ -36,7 +36,7 @@ class MonthMudaViewController: UIViewController {
         //var spArrar[0]
         
         
-        //ムダ金額を取得
+        //ムダ金額を取得　nilかどうかの判定
         if saveData.objectForKey("SPSUM") != nil{
             spTotal = saveData.objectForKey("SPSUM") as! Int
         }

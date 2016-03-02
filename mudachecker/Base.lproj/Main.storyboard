@@ -252,7 +252,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="top2.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="vCy-XK-Xlw"/>
+                                    <action selector="toTop" destination="YzP-gx-Zqt" eventType="touchUpInside" id="bdd-BN-aRZ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxim2ラベル.png" id="H94-1P-fMf">
