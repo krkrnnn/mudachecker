@@ -39,7 +39,7 @@ class GoalViewController: UIViewController {
             loadInt = saveData.objectForKey("GOAL") as! Int
             goalLabel.numberOfLines = 2
             var goal: String = String(loadInt)
-            goalLabel.text = "今月のムダ遣いの上限は" + "\n" + "\(goal)" + "円です"
+            goalLabel.text = "ムダ遣いの上限は" + "\n" + "\(goal)" + "円です"
         }
 
         
@@ -66,12 +66,13 @@ class GoalViewController: UIViewController {
         //目標金額を保存
         saveData.setObject(goalValue, forKey: "GOAL")
 
-        
+
         loadInt = saveData.integerForKey("GOAL")
+
         var goal: String = String(loadInt)
         
         goalLabel.numberOfLines = 2
-        goalLabel.text = "今月のムダ遣いの上限は" + "\n" + "\(goal)" + "円です"
+        goalLabel.text = "ムダ遣いの上限は" + "\n" + "\(goal)" + "円です"
         
 
     }
